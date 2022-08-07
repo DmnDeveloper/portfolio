@@ -1,0 +1,46 @@
+@import '../../sass/variables';
+.txt-one{
+    font-family: $font-text-poppins;
+    margin-bottom: 20px;
+}
+.txt-two{
+    font-family: $font-text-poppins;
+    margin: 20px 0 30px 0;
+}
+.container-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0 35px 0;
+    .wrapper-btn-code{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        height: 50px;
+        background-color: black;
+        border-radius: 15px;
+        a{
+            font-family: $font-title-serif;
+            color: white;
+            text-decoration: none;
+            padding: 18px 36px 18px 36px;
+        }
+    }
+    .wrapper-btn-app{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        height: 50px;
+        border: 2px solid #000;
+        background-color: #fff;
+        border-radius: 15px;
+        a{
+            font-family: $font-title-serif;
+            color: #000;
+            text-decoration: none;
+            padding: 18px 36px 18px 36px;
+        }
+    }
+}

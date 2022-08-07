@@ -1,0 +1,22 @@
+@import './sass/responsive';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a.link.active{
+  color: #ffff;
+  font-weight: bold;
+  border-bottom: 4px solid white;
+}
+
+
+img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+label .error.field{
+  color: red;
+  text-align: center;
+}

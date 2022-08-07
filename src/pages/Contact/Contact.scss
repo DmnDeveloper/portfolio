@@ -1,0 +1,66 @@
+@import '../../sass/variables';
+.contact-wrapper{
+    display: flex;
+    width: 100%;
+    .cv-btn{
+        font-family: $font-title-serif;
+        background-color: #000;
+        border: 1px solid black;
+        color: #fffF;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        height: 50px;
+        a{
+            cursor: pointer;
+            padding: 20px 15px 20px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+        }
+    }
+    .txt-web{
+        font-family: $font-title-serif;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        border-radius: 70px;
+    }
+    .my-name{
+        font-family: $font-title-serif;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .txt-inf{
+        font-size: 17px;
+        font-family: $font-text-poppins;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .wrapper-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 550px;
+        border:1px solid #fff;
+        .other-options{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../sass/variables';
+.individual-modal-card{
+    margin: 20px 5px 0 0;
+    width: 220px;
+    height: 230px;
+    .img-modal-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+        border-bottom: 2px solid black;
+    }
+    .txt-modal-card{
+        width: 100%;
+        height: 35%;
+        padding-top: 10px;
+        .txt-logo-modal{
+            text-align: center;
+            font-size: 15px;
+            font-family: $font-text-poppins;
+        }
+    }
+    .txt-modal{
+        font-family: $font-text-poppins;
+        text-align: center;
+    }
+    .btn-modal-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 25%;
+        .btn-modal-info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            margin-top: 10px;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+    .txt-logo-modal{ 
+            display: flex;
+            align-items: center;
+            font-family: 'Stint Ultra Condensed', cursive;
+            font-size: 35px;
+            color: #000;
+            margin: 0;  
+    }
+    .img-calistenia-modal{
+        width: 100%;
+        height: 100%;
+    }
+}
+.file-modals-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;   
+}

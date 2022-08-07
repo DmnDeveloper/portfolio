@@ -1,0 +1,39 @@
+@import '../../sass/variables';
+.column-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    .row{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        .logo-porcent{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 260px;
+            .wrapper-rotate{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+            }
+            .inf-level{
+                display: flex;
+                align-items: center;
+                height: 60px;
+                width: 200px;
+            }
+        }
+        .txt-level{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+        }
+    }
+}

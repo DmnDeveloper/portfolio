@@ -1,0 +1,74 @@
+@import '../../sass/variables';
+.portafolio-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .txt-web{
+        font-family: $font-title-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        border-radius: 70px;
+    }
+    .my-name{
+        font-family: $font-title-serif;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0;
+    }
+    .txt-inf{
+        font-size: 17px;
+        font-family: $font-text-poppins;
+        text-align: center;
+    }
+    .cv-btn{
+        font-family: $font-title-serif;
+        background-color: #000;
+        border: 1px solid black;
+        color: #fffF;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        height: 50px;
+        a{
+            font-size: 16px;
+            cursor: pointer;
+            padding: 20px 15px 20px 15px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .con-btn{
+        background-color: white;
+        font-family: $font-title-serif;
+        border: 2px solid #000;
+        border-radius: 10px;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        .link{
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            padding: 20px 15px 20px 15px;
+        }
+    }
+    .wrapper-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 65%;
+        min-height: 555px;
+    }
+}

@@ -1,0 +1,30 @@
+.wrapper-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 525px;
+    min-width: 325px;
+    max-width: 450px;
+}
+.wrapper-perfil .wrapper-name-foto{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .img-wrapper{
+        width: 140px;
+        height: 140px;
+        margin: 10px 0 10px 0;
+    }
+    .name-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    }
+    .wrapper-perfil {
+        padding: 0 15px 0 15px;
+        .btns-wrapper{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+    }
+}
