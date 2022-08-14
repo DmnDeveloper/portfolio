@@ -17,11 +17,6 @@ const ModalPort = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.8 }}
         ><a href='https://github.com/DmnDeveloper/cloeoe' target='_blank' rel='noreferrer'>Codigo</a></motion.button>
-        <motion.button 
-        className='wrapper-btn-app'
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.8 }}
-        ><a href='https://github.com/DmnDeveloper/cloeoe' target='_blank' rel='noreferrer'>Visualizar</a></motion.button>
     </div>
     </>
   )
