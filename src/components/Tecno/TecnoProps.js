@@ -9,7 +9,7 @@ function TecnoProps(props) {
           <div className='logo-porcent'>
             <motion.div 
             className='wrapper-rotate'
-            animate={{ rotate: 5040, scale: [0.1 , 1.2,  1.0] }}
+            animate={{ rotate: 3240, scale: [0.1 , 1.2,  1.0] }}
             transition={{  duration: 2 }}>{props.iconone}</motion.div>
             <div className='inf-level'>{props.levelone}</div>
           </div> 
@@ -23,7 +23,7 @@ function TecnoProps(props) {
           <div className='logo-porcent'>
             <motion.div 
             className='wrapper-rotate'
-            animate={{ rotate: 5040, scale: [0.1 ,1.2, 1.0]  }}
+            animate={{ rotate: 3240, scale: [0.1 ,1.2, 1.0]  }}
             transition={{  duration: 2 }}>{props.icontwo}</motion.div>
             <div className='inf-level'>{props.leveltwo}</div>
           </div> 
@@ -36,7 +36,7 @@ function TecnoProps(props) {
           <div className='logo-porcent'>
             <motion.div 
             className='wrapper-rotate'
-            animate={{ rotate: 5040, scale: [0.1 , 1.2, 1.0] }}
+            animate={{ rotate: 3240, scale: [0.1 , 1.2, 1.0] }}
             transition={{  duration: 2 }}>{props.iconthree}</motion.div>
             <div className='inf-level'>{props.levelthree}</div>
           </div>
@@ -49,7 +49,7 @@ function TecnoProps(props) {
           <div className='logo-porcent'>
             <motion.div 
             className='wrapper-rotate'
-            animate={{ rotate: 5040, scale: [0.1 , 1.2, 1.0] }}
+            animate={{ rotate: 3240, scale: [0.1 , 1.2, 1.0] }}
             transition={{  duration: 2 }}>{props.iconfour}</motion.div>
             <div className='inf-level'>{props.levelfour}</div>
           </div>
@@ -75,7 +75,7 @@ function TecnoProps(props) {
           <div className='logo-porcent'>
             <motion.div 
             className='wrapper-rotate'
-            animate={{ rotate: 5040, scale: [0.1 , 1.2, 1] }}
+            animate={{ rotate: 3240, scale: [0.1 , 1.2, 1] }}
             transition={{  duration: 2 }}>{props.iconsix}</motion.div>
             <div className='inf-level'>{props.levelsix}</div>
           </div>

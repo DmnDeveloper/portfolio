@@ -8,7 +8,7 @@ import './Contact.scss'
 const nameWeb = () => <p className='txt-web'>Desarrollador Web</p>
 const photo = () => <img className='image' src={Foto} alt='' />
 const myName = () => <p className='my-name'>Damián Dávalos</p>
-const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1, fontWeight: 'bold' }}>
+const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1 }}>
     Este es un poco de mi trabajo como <br/> Front-end. Si quieres conocer algo mas,
     de lado derecho puedes dejarme un correo,<br/>lo respondere cuando me sea posible
     o abajo puede encontrar mis redes sociales.<br/>Gracias por tu visita! 

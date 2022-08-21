@@ -20,7 +20,7 @@ import ModalCalis from './ModalCalis';
 }
 //cloe
 const img = () => <img className='img-cloe-modal pad' src={imgCloeModal} alt=''></img>
-const txt = () => <motion.p  whileHover={{ scale: 1.1, fontWeight: 'bold' }} className='txt-modal'>Aplicación Benefiios Cloe, desarrollada con React <br />...</motion.p>
+const txt = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Aplicación Benefiios Cloe, desarrollada con React <br />...</motion.p>
 const BtnModal = () =>{
     const [isOpenModal, openModalCloe, closeModalCloe] = useModal(false)
     return(
@@ -41,7 +41,7 @@ const BtnModal = () =>{
 }
 //portfoliio
 const imgPortafolio = () =>  <h1 className='txt-logo-modal'>MyPortfolio</h1>
-const txtPortafolio = () => <motion.p  whileHover={{ scale: 1.1, fontWeight: 'bold' }} className='txt-modal'>Desarrollado com react, mi portafolio profesional<br />...</motion.p>
+const txtPortafolio = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Desarrollado com react, mi portafolio profesional<br />...</motion.p>
 const BtnPortafolio = () => {
     const [isOpenModalPortafolio, openModalPortafolio, closeModalPotafolio] = useModal(false)
     return(
@@ -61,7 +61,7 @@ const BtnPortafolio = () => {
 }
 //calistenia 
 const imgCalistenia = () => <h1 className='txt-logo-modal'>CalisteniaMx</h1>
-const txtCalistenia = () => <motion.p  whileHover={{ scale: 1.1, fontWeight: 'bold' }} className='txt-modal'>Proyecto personal desarrollado con JS Vanilla<br />...</motion.p>
+const txtCalistenia = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Proyecto personal desarrollado con JS Vanilla<br />...</motion.p>
 const BtnCalistenia = () => {
     const [isOpenModalCalistenia, openModalCalistenia, closeModalCalistenia] = useModal(false)
     return(

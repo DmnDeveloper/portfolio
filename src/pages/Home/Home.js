@@ -12,7 +12,7 @@ import TableTwo from '../../components/Tecno/TableTwo'
 const nameWeb = () => <p className='txt-web'>Front-end</p>
 const photo = () => <img className='image' src={Foto} alt='' />
 const myName = () => <p className='my-name'>Damian Davalos</p>
-const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1, fontWeight: 'bold' }}>
+const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1 }}>
     Mi nombre es Jesús Damián Matín Dávalos<br />estas son algunas de las tecnologias<br /> que he utilizado y
     aprendido en mas<br/> de dos años como desarrollador frontEnd.<br/> Gracias por tu visita.</motion.p>
 const btnCv = () => {
