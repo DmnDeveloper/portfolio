@@ -14,6 +14,10 @@
         width: 140px;
         height: 140px;
         margin: 10px 0 10px 0;
+        .image{
+            width: 100%;
+            border-radius: 70px;
+        } 
     }
     .name-wrapper{
         display: flex;

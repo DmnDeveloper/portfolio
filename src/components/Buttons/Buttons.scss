@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+//Codigo del boton Descargar CV:
+.btn-cv{
+    font-family: $font-text-poppins;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+//Codigo del boton Contactarme: 
+.btn-contacto{
+    font-family: $font-text-poppins;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

@@ -1,21 +1,18 @@
 import MyPerfil from '../../components/MyPerfil'
-import Foto from '../../assets/fotoBN.jpg'
-import { Link } from 'react-router-dom'
-import pdf from '../../assets/CV-JesusDamianFront.pdf'
+
 import { motion } from 'framer-motion'
-import './Home.scss'
-//importaciones de icons
 import TableOne from '../../components/Tecno/TableOne'
 import TableTwo from '../../components/Tecno/TableTwo' 
-
+import BtnCv from '../../components/Buttons/BtnCv'
+import BtnContacto from '../../components/Buttons/BtnContacto'
+import './Home.scss'
 //elementos de 'MyPerfil'
 const nameWeb = () => <p className='txt-web'>Front-end</p>
-const photo = () => <img className='image' src={Foto} alt='' />
 const myName = () => <p className='my-name'>Damian Davalos</p>
 const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1 }}>
     Mi nombre es Jesús Damián Matín Dávalos<br />estas son algunas de las tecnologias<br /> que he utilizado y
     aprendido en mas<br/> de dos años como desarrollador frontEnd.<br/> Gracias por tu visita.</motion.p>
-const btnCv = () => {
+/*const btnCv = () => {
   return(
     <motion.button className='cv-btn'
     whileHover={{ scale: 1.1 }}
@@ -32,7 +29,7 @@ const btnConta = () => {
     > <Link className='link' exact='true' to='/Contact'>Contactarme</Link>
     </motion.button>
   )
-}
+}*/
 
 
 const Home = () => {
@@ -45,16 +42,14 @@ const Home = () => {
   >
       <MyPerfil
         name={nameWeb()}
-        img={photo()} 
         myname={myName()}
         txt={txtInfo()}
-        btnCV={btnCv()}
-        btnContact={btnConta()}
+        btnCV={<BtnCv />}
+        btnContact={<BtnContacto />}
       />
       <div className='wrapper-about'>
         <TableOne />
         <TableTwo />
-        
       </div>
   </motion.div>
   )

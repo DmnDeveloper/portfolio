@@ -4,17 +4,13 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    min-height: 550px;
+    min-height: 520px;
         .txt-web{
             font-family: $font-title-serif;
             font-size: 25px;
             font-weight: bold;
             text-align: center;
         }
-        .image{
-            width: 100%;
-            border-radius: 70px;
-        } 
         .my-name{
             font-family: $font-title-serif;
             font-weight: bold;
@@ -28,51 +24,10 @@
             font-family: $font-text-poppins;
             text-align: center;
         }
-        .cv-btn{
-            font-family: $font-title-serif;
-            background-color: #000;
-            border: 1px solid black;
-            color: #fffF;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-            letter-spacing: 2px;
-            a{
-                cursor: pointer;
-                font-size: 16px;
-                padding: 20px 15px 20px 15px;
-                text-decoration: none;
-                color: white;
-            }
-        }
-        .con-btn{
-            font-family: $font-title-serif;
-            background-color: white;
-            border: 2px solid #000;
-            border-radius: 10px;
-            display: flex;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            letter-spacing: 2px;
-            .link{
-                cursor: pointer;
-                text-decoration: none;
-                color: black;
-                padding: 20px 15px 20px 15px;
-                font-size: 16px;
-            }
-        }
         .wrapper-about{
             width: 65%;
-            display: flex;
-            
+            display: flex; 
             align-items: center;
             justify-content: space-around;
-            
-            
-            
         }
     }

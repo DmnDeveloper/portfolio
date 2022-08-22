@@ -2,35 +2,12 @@
 .contact-wrapper{
     display: flex;
     width: 100%;
-    .cv-btn{
-        font-family: $font-title-serif;
-        background-color: #000;
-        border: 1px solid black;
-        color: #fffF;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 2px;
-        height: 50px;
-        a{
-            cursor: pointer;
-            padding: 20px 15px 20px 15px;
-            text-decoration: none;
-            font-size: 16px;
-            color: white;
-        }
-    }
     .txt-web{
         font-family: $font-title-serif;
         font-weight: bold;
         font-size: 25px;
         margin: 0;
         text-align: center;
-    }
-    .image{
-        width: 100%;
-        border-radius: 70px;
     }
     .my-name{
         font-family: $font-title-serif;

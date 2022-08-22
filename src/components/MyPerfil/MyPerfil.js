@@ -1,4 +1,5 @@
 import React from 'react'
+import Foto from '../../assets/fotoBN.jpg'
 import './MyPerfil.scss'
 
 const MyPerfil = (props) => {
@@ -7,7 +8,7 @@ const MyPerfil = (props) => {
         <div className='wrapper-name-foto'>
             { props.name }
           <div className='img-wrapper'>
-            {props.img}
+            <img className='image' src={Foto} alt='' />
           </div>
           <div className='name-wrapper'>
             {props.myname}
