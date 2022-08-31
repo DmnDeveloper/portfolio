@@ -1,5 +1,5 @@
-import { Form } from 'semantic-ui-react'
 import { useFormik } from 'formik'
+import { Form } from 'semantic-ui-react'
 import toast, { Toaster } from 'react-hot-toast'
 import { motion } from 'framer-motion'
 import * as Yup from 'yup'
@@ -7,23 +7,22 @@ import emailjs from '@emailjs/browser'
 import './FormularioContact.scss'
 
 const FormularioContact = () => {
-  const initialValues = {
-    name: "",
-    apellido: "",
-    email: "",
-    asunto: "",
-  }
     const formik = useFormik({
-        initialValues: {initialValues},
-        validationSchema: Yup.object({
+        initialValues: {
+          name: "",
+          apellido: "",
+          email: "",
+          asunto: "",
+        },
+        validationSchema: Yup.object({ 
           name: Yup.string(),
-          apellido: Yup.string(),
+          apellido: Yup.string(), 
           email: Yup.string()
           .email('email no valido')
           .required('Campo obligatorio'),
           asunto: Yup.string()
           .required('Campo obligatorio'),
-        }),
+      }),
         onSubmit: values => {
            emailjs.send('service_wk7oipo', 'template_p1om6xp', values, 'ByxGvfOOiYG4nJvWS')
            .then((response) => {
@@ -31,33 +30,26 @@ const FormularioContact = () => {
            toast.success('Enviado Correctamente', {
             duration: 10000,
            })
-           values = initialValues;      
+          const valuesAll = (JSON.stringify(values, null, 2))
+          console.log(valuesAll)
         // navigate("/");
       })
       .catch((err) => {
-        console.log("FAILED...", err);
-        toast.error('UP! Algo salio mal')
+          console.log("FAILED...", err);
+          toast.error('UP! Algo salio mal')
       });
-          /*try {
-            console.log(values)
-            toast.success('Enviado Correctamente')
-          } catch (error) {
-            
-            toast.error('UP! Algo salio mal')
-          }*/
-          
-      
         }
     })
   return (
     <Form className='form-contact' onSubmit={formik.handleSubmit}>
+               
         <div className='welcome-wrapper'>
           <p className='welcome-text'>Formulario de contacto:</p>
         </div>
         <div className='nombre-apellido' >
           <label>
           Nombre:
-          <Form.Input 
+          <Form.Input
             className='nombre'
             type='text'
             name='name'
@@ -69,7 +61,7 @@ const FormularioContact = () => {
 
           <label>
             Apellido:
-          <Form.Input 
+          <Form.Input
             className='apellido'
             type='text'
             name='apellido'
@@ -92,7 +84,7 @@ const FormularioContact = () => {
         </label>
 
         <label>
-          *Asunto:
+        *Asunto:
         <Form.Input
             type='text'
             name='asunto'
@@ -102,7 +94,7 @@ const FormularioContact = () => {
             />
         </label>
         </div>
-        <motion.button 
+        <motion.button
         className='btn-submit' 
         type='submit'
         whileHover={{ scale: 1.1 }}

@@ -23,14 +23,18 @@ import ModalCalis from './ModalCalis';
 
 function BtnOpenModal (props) {
     return(
-        <motion.button className='button' onClick={props.myOnClick} >
+        <motion.button className='button' 
+        onClick={props.myOnClick} 
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        >
             <BsArrowsFullscreen size='35px'/>
         </motion.button>
     )
 }
 
 //cloe
-const img = () => <img className='img-cloe-modal pad' src={imgCloeModal} alt=''></img>
+const img = () => <img className='img-cloe-modal pad' src={imgCloeModal} alt='' />
 const txt = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Aplicación Benefiios Cloe, desarrollada con React <br />...</motion.p>
 const BtnModal = () =>{
     const [isOpenModal, openModalCloe, closeModalCloe] = useModal(false)

@@ -1,20 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import './MenuNav.scss'
+import './Header.scss'
 
 
 const MenuNav = () => {
   return (
     <div className='menu-wrapper'>
-        <div className='wrapper-link'>
-            <NavLink className='link' exact='true' to='/'>Sobre Mi</NavLink>
-        </div>
-        <div className='wrapper-link'>
-            <NavLink className='link' exact='true' to='/Portafolio'>Portafolio</NavLink>
-        </div>
-        <div className='wrapper-link'>
-           <NavLink className='link' exact='true' to='/Contact'>Contacto</NavLink>
-        </div>
+        <NavLink className='link' exact='true' to='/'>
+          <div className='wrapper-link'>Sobre Mi</div>
+        </NavLink>
+        <NavLink className='link' exact='true' to='/Portafolio'>
+          <div className='wrapper-link'>Portafolio</div>
+        </NavLink>
+        <NavLink className='link' exact='true' to='/Contact'>
+          <div className='wrapper-link'>Contacto</div>
+        </NavLink>
     </div>
   )
 }
