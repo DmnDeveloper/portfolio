@@ -4,8 +4,6 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import { VscGithub } from 'react-icons/vsc'
 import { GrLinkedinOption } from 'react-icons/gr'
-import { Modal } from '../ModalsPortafolio/Modal'
-import { useModal } from '../../hooks/useModal'
 import MenuNav from './MenuNav'
 import './Header.scss'
 
@@ -20,7 +18,6 @@ const LogoWrapper = () => {
 }
 
 const Header = () => {
-  const [isOpen, openModal, closeModal] = useModal(false)
   return (
     <header className='header-class'>
       <div className='wrapper-logo'>
@@ -32,9 +29,7 @@ const Header = () => {
       </div>   
       
       <div className='wrapper-icons'>
-        <BtnIconFooter myClick={openModal} icon={<GrLinkedinOption size='35px' color='#fff'/>}></BtnIconFooter>
-        <Modal isOpen={isOpen} closeModal={closeModal}></Modal> 
-
+        <BtnIconFooter link={'https://www.linkedin.com/in/jesús-damián-martín-dávalos-578b761b9'} icon={<GrLinkedinOption size='35px' color='#fff'/>}></BtnIconFooter>
         <BtnIconFooter link={'https://github.com/DmnDeveloper'} icon={<VscGithub size='35px' color='#fff'/>}></BtnIconFooter>
       </div>  
     </header>

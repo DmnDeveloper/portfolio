@@ -5,7 +5,7 @@ import './TecnoProps.scss'
 export function LevelDesign (props) {
   return(
     <motion.div className='level' animate={props.porcentaje} initial={props.initial} transition={{ duration: 2 }}>
-      <p className='name'>{props.name}</p>
+      <motion.p className='name' animate={{ scaleX: [0, 0, 1] }}>{props.name}</motion.p>
     </motion.div>
   )
 }
@@ -16,7 +16,7 @@ export const IconDesign = (props) => {
     <div className='logo-porcent'>
         <motion.div 
         className='wrapper-rotate'
-        animate={{ rotate: 3240, scale: [0.1 , 1.2,  1.0] }}
+        animate={{ rotate: 2520 ,rotateY: 2520, rotateX: 2520, scale: [0.1 ,1.2, 1] }}
         transition={{  duration: 2 }}
         >{props.icon}</motion.div>
         <div className='inf-level'>{props.level}</div>
