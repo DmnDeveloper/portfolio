@@ -4,13 +4,7 @@ import MyPerfil from '../../components/MyPerfil'
 import { BtnCv } from '../../components/Buttons/BtnsPerfil'
 import './Contact.scss'
 
-const nameWeb = () => <p className='txt-web'>Desarrollador Web</p>
-const myName = () => <p className='my-name'>Damián Dávalos</p>
-const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1 }}>
-    Este es un poco de mi trabajo como <br/> Front-end. Si quieres conocer algo mas,
-    de lado derecho puedes dejarme un correo,<br/>lo respondere cuando me sea posible
-    o abajo puede encontrar mis redes sociales.<br/>Gracias por tu visita! 
-</motion.p>
+
 
 const Contact = () => {
   return (
@@ -21,9 +15,9 @@ const Contact = () => {
       exit={{x: window.innerWidth, transition: { duration: 0.1 } }}
       >
         <MyPerfil 
-        name={nameWeb()}
-        myname={myName()}
-        txt={txtInfo()}
+        name={'Desarrollador Web'}
+        myname={'Damián Dávalos'}
+        txt={'Este es un poco de mi trabajo como Front-end. Si quieres conocer algo mas,de lado derecho puedes dejarme un correo, lo respondere cuando me sea posible o abajo puede encontrar mis redes sociales. Gracias por tu visita!'}
         btnCV={<BtnCv />} />
 
         <div className='wrapper-contact'>

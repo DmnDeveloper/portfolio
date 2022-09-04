@@ -1,28 +1,20 @@
+import React from 'react'
 import MyPerfil from '../../components/MyPerfil'
 import { motion } from 'framer-motion'
-import './Portafolio.scss'
 import Modals from '../../components/ModalsPortafolio/Modals'
 import {BtnContacto, BtnCv} from '../../components/Buttons/BtnsPerfil'
-
-const nameWeb = () => <p className='txt-web'>Portafolio</p>
-const myName = () => <p className='my-name'>Damian Davalos</p>
-const txtInfo = () => <motion.p className='txt-inf' whileHover={{ scale: 1.1 }}>
-    Estos son algunos de los proyectos en <br /> los que he podido participar con el front end.<br /> Tanto proyectos personales como a clientes<br /> es un poco de lo trabajado.
-</motion.p>
-
+import './Portafolio.scss'
 
 const Portafolio = () => {
   return (
-    <motion.div 
-    className='portafolio-wrapper'
-    initial={{width: 0}}
-    animate={{width: '100%'}}
+    <motion.div className='portafolio-wrapper'
+    initial={{width: 0}}animate={{width: '100%'}}
     exit={{x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <MyPerfil
-        name={nameWeb()}
-        myname={myName()}
-        txt={txtInfo()}
+        name={'Portafolio'}
+        myname={'Damian Davalos'}
+        txt={'Estos son algunos de los proyectos en los que he podido participar con el front end. Tanto proyectos personales como a clientes es un poco de lo trabajado.'}
         btnCV={<BtnCv />}
         btnContact={<BtnContacto />}
           />

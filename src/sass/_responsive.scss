@@ -34,8 +34,16 @@
     .header-class{
         flex-direction: column;
         align-items: center;
-        .wrapper-link .link{
-            font-size: 11px;
+        height: 150px;
+        padding-bottom: 10px;
+        .wrapper-link {
+            
+            .link{
+                font-size: 11px;
+            }
+        }
+        .wrapper-menu{
+            width: 80%;
         }
     }
     

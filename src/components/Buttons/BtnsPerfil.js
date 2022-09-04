@@ -9,7 +9,8 @@ export function BtnContacto () {
       <Link exact='true' to='/Contact'>
           <motion.button className='btn-contacto'
           whileHover={{ scale: 1.1 }} 
-          whileTap={{ scale: 0.8 }}>Contactarme</motion.button>
+          whileTap={{ scale: 0.8 }}>
+            Contactarme</motion.button>
       </Link>
   )
 }

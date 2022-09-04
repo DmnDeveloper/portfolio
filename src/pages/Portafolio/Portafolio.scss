@@ -3,25 +3,6 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    .txt-web{
-        font-family: $font-title-serif;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .my-name{
-        font-family: $font-title-serif;
-        font-weight: bold;
-        font-size: 35px;
-        letter-spacing: 2px;
-        text-align: center;
-        margin: 0;
-    }
-    .txt-inf{
-        font-size: 17px;
-        font-family: $font-text-poppins;
-        text-align: center;
-    }
     .wrapper-projects{
         display: flex;
         flex-direction: column;

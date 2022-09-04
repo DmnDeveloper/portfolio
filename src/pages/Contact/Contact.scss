@@ -2,29 +2,6 @@
 .contact-wrapper{
     display: flex;
     width: 100%;
-    .txt-web{
-        font-family: $font-title-serif;
-        font-weight: bold;
-        font-size: 25px;
-        margin: 0;
-        text-align: center;
-    }
-    .my-name{
-        font-family: $font-title-serif;
-        font-weight: bold;
-        font-size: 35px;
-        letter-spacing: 2px;
-        text-align: center;
-    }
-    .txt-inf{
-        font-size: 17px;
-        font-family: $font-text-poppins;
-        letter-spacing: 1px;
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
     .wrapper-contact{
         display: flex;
         flex-direction: column;

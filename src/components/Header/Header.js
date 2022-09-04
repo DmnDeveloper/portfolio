@@ -11,7 +11,7 @@ import './Header.scss'
 
 const LogoWrapper = () => {
   return (
-    <div className='logo-class'>
+    <div className='logo-class' >
       <h1 className='text-logo'>
         <AiOutlineLeft size='25px' />MyPortfolio<AiOutlineRight size='25px'/>
       </h1>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import Foto from '../../assets/fotoBN.jpg'
 import './MyPerfil.scss'
 
@@ -6,17 +7,19 @@ const MyPerfil = (props) => {
   return (
     <div className='wrapper-perfil'>
         <div className='wrapper-name-foto'>
-            { props.name }
+          <p className='txt-web'>{ props.name }</p>
           <div className='img-wrapper'>
             <img className='image' src={Foto} alt='' />
           </div>
           <div className='name-wrapper'>
-            {props.myname}
+          <p className='my-name'>{props.myname}</p>
           </div>
         </div> 
         
         <div className='text-wrapper'>
-          {props.txt}
+          <motion.p className='txt-inf'
+          whileHover={{ scale: 1.1 }}
+          >{props.txt}</motion.p>
         </div>
 
         <div className='btns-wrapper'>

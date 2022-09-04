@@ -3,11 +3,9 @@ import { BsArrowsFullscreen } from 'react-icons/bs'
 import { Modal } from './Modal';
 import { useModal } from '../../hooks/useModal';
 import { motion } from 'framer-motion';
-import ModalCloe from './ModalCloe';
-import ModalPort from './ModalPort';
-import ModalCalis from './ModalCalis';
-import './Modals.scss'
+import { ModalCloe, ModalCalis, ModalPort } from './AllModals';
 import imgCloeModal from '../../assets/logoCloe.jpg'
+import './Modals.scss'
 
 const Modals = () => {
     const [isOpenModal, openModalCloe, closeModalCloe] = useModal(false)
