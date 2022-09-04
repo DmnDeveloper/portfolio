@@ -1,7 +1,7 @@
 import FormularioContact from '../../components/FormularioContact'
 import { motion } from 'framer-motion'
 import MyPerfil from '../../components/MyPerfil'
-import BtnCv from '../../components/Buttons/BtnCv'
+import { BtnCv } from '../../components/Buttons/BtnsPerfil'
 import './Contact.scss'
 
 const nameWeb = () => <p className='txt-web'>Desarrollador Web</p>

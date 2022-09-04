@@ -14,9 +14,11 @@ const MyPerfil = (props) => {
             {props.myname}
           </div>
         </div> 
+        
         <div className='text-wrapper'>
           {props.txt}
         </div>
+
         <div className='btns-wrapper'>
         {props.btnCV}
         {props.btnContact}

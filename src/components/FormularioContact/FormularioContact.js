@@ -32,23 +32,21 @@ const FormularioContact = () => {
            })
           const valuesAll = (JSON.stringify(values, null, 2))
           console.log(valuesAll)
-        // navigate("/");
-      })
-      .catch((err) => {
+         })
+          .catch((err) => {
           console.log("FAILED...", err);
           toast.error('UP! Algo salio mal')
-      });
+           });
         }
     })
   return (
-    <Form className='form-contact' onSubmit={formik.handleSubmit}>
-               
+    <Form className='form-contact' onSubmit={formik.handleSubmit}>   
         <div className='welcome-wrapper'>
           <p className='welcome-text'>Formulario de contacto:</p>
         </div>
+{/* Contenedor de los input de Nombre y Apellido: */}
         <div className='nombre-apellido' >
-          <label>
-          Nombre:
+          <label>Nombre:
           <Form.Input
             className='nombre'
             type='text'
@@ -56,11 +54,9 @@ const FormularioContact = () => {
             value={formik.values.name}
             onChange={formik.handleChange}
             error={formik.errors.name}
-             />
-          </label>
+          /></label>
 
-          <label>
-            Apellido:
+          <label>Apellido:
           <Form.Input
             className='apellido'
             type='text'
@@ -68,38 +64,36 @@ const FormularioContact = () => {
             value={formik.values.apellido} 
             onChange={formik.handleChange}
             error={formik.errors.apellido}
-             />
-          </label>
+          /></label>
         </div>
+{/* Contenedor de los input de Correo y Asunto: */}
         <div className='correo-asunto'>  
-        <label>
-          *Correo:
+        <label>*Correo:
         <Form.Input
-            type='text'
-            name='email'
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            error={formik.errors.email}
-            />
-        </label>
+          type='text'
+          name='email'
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          error={formik.errors.email}
+        /></label>
 
-        <label>
-        *Asunto:
+        <label>*Asunto:
         <Form.Input
-            type='text'
-            name='asunto'
-            value={formik.values.asunto}
-            onChange={formik.handleChange}
-            error={formik.errors.asunto}
-            />
-        </label>
+          type='text'
+          name='asunto'
+          value={formik.values.asunto}
+          onChange={formik.handleChange}
+          error={formik.errors.asunto}
+        /></label>
         </div>
+
         <motion.button
         className='btn-submit' 
         type='submit'
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.8 }}
         >Enviar</motion.button>
+
         <Toaster 
         containerStyle={{
           position: 'relative', 

@@ -26,15 +26,16 @@ const Header = () => {
       <div className='wrapper-logo'>
        <LogoWrapper />
       </div>
+
       <div className='wrapper-menu'>
        <MenuNav /> 
       </div>   
+      
       <div className='wrapper-icons'>
         <BtnIconFooter myClick={openModal} icon={<GrLinkedinOption size='35px' color='#fff'/>}></BtnIconFooter>
         <Modal isOpen={isOpen} closeModal={closeModal}></Modal> 
 
-        <BtnIconFooter myClick={openModal} icon={<VscGithub size='35px' color='#fff'/>}></BtnIconFooter>
-        <Modal isOpen={isOpen} closeModal={closeModal}></Modal>  
+        <BtnIconFooter link={'https://github.com/DmnDeveloper'} icon={<VscGithub size='35px' color='#fff'/>}></BtnIconFooter>
       </div>  
     </header>
   )

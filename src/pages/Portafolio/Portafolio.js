@@ -2,8 +2,7 @@ import MyPerfil from '../../components/MyPerfil'
 import { motion } from 'framer-motion'
 import './Portafolio.scss'
 import Modals from '../../components/ModalsPortafolio/Modals'
-import BtnContacto from '../../components/Buttons/BtnContacto'
-import BtnCv from '../../components/Buttons/BtnCv'
+import {BtnContacto, BtnCv} from '../../components/Buttons/BtnsPerfil'
 
 const nameWeb = () => <p className='txt-web'>Portafolio</p>
 const myName = () => <p className='my-name'>Damian Davalos</p>

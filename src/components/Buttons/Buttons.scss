@@ -35,3 +35,21 @@
     border: 0;
     cursor: pointer;
 }
+
+// Botones codigo y vizualizar del modal:
+.btn-code{
+    width: 125px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.btn-view{
+    width: 125px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}

@@ -1,17 +1,52 @@
 import React from 'react'
-import imgCloeModal from '../../assets/logoCloe.jpg'
 import { BsArrowsFullscreen } from 'react-icons/bs'
 import { Modal } from './Modal';
 import { useModal } from '../../hooks/useModal';
 import { motion } from 'framer-motion';
-import './Modals.scss'
 import ModalCloe from './ModalCloe';
 import ModalPort from './ModalPort';
 import ModalCalis from './ModalCalis';
+import './Modals.scss'
+import imgCloeModal from '../../assets/logoCloe.jpg'
 
+const Modals = () => {
+    const [isOpenModal, openModalCloe, closeModalCloe] = useModal(false)
+    const [isOpenModalCalistenia, openModalCalistenia, closeModalCalistenia] = useModal(false)
+    const [isOpenModalPortafolio, openModalPortafolio, closeModalPotafolio] = useModal(false)
 
+  return (
+    <div className='file-modals-wrapper'>
+        <ModalDesign 
+        imgmodal={<img className='img-cloe-modal pad' src={imgCloeModal} alt='' />}
+        txtmodal={<TextAnimated text={'Aplicación Benefiios Cloe, desarrollada con React'} />}
+        btn={<><BtnOpenModal myOnClick={openModalCloe} />
+            <Modal isOpen={isOpenModal} closeModal={closeModalCloe}>
+                <ModalCloe />
+            </Modal></>} 
+        />
 
- function ModalDesign(props) {
+        <ModalDesign 
+        imgmodal={<h1 className='txt-logo-modal'>MyPortfolio</h1>}
+        txtmodal={<TextAnimated text={'Desarrollado com react, mi portafolio profesional'} />}
+        btn={<><BtnOpenModal myOnClick={openModalPortafolio}/>
+            <Modal isOpen={isOpenModalPortafolio} closeModal={closeModalPotafolio}>
+                <ModalPort />
+            </Modal></>}
+        />
+
+        <ModalDesign 
+        imgmodal={<h1 className='txt-logo-modal'>CalisteniaMx</h1>}
+        txtmodal={<TextAnimated text={'Proyecto personal desarrollado con JS Vanilla'}/>}
+        btn={<><BtnOpenModal myOnClick={openModalCalistenia} />
+            <Modal isOpen={isOpenModalCalistenia} closeModal={closeModalCalistenia}>
+                <ModalCalis />
+            </Modal></>}
+        />
+    </div>
+  )
+}
+
+function ModalDesign(props) {
     return(
         <div className='individual-modal-card'>
             <div className='img-modal-card'>{props.imgmodal}</div>
@@ -27,87 +62,12 @@ function BtnOpenModal (props) {
         onClick={props.myOnClick} 
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
-        >
-            <BsArrowsFullscreen size='35px'/>
+        ><BsArrowsFullscreen size='35px'/>
         </motion.button>
     )
 }
 
-//cloe
-const img = () => <img className='img-cloe-modal pad' src={imgCloeModal} alt='' />
-const txt = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Aplicación Benefiios Cloe, desarrollada con React <br />...</motion.p>
-const BtnModal = () =>{
-    const [isOpenModal, openModalCloe, closeModalCloe] = useModal(false)
-    return(
-        <>   
-        {/*<motion.button 
-        className='btn-modal-info' 
-        onClick={openModalCloe}
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.9 }}   
-        >    <BsArrowsFullscreen size='35px'/>
-        </motion.button>*/}
-        <BtnOpenModal myOnClick={openModalCloe} />
+const TextAnimated = (props) => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>{props.text}<br />...</motion.p>
 
-        <Modal isOpen={isOpenModal} closeModal={closeModalCloe}>
-            <ModalCloe />
-        </Modal>
-        </>
-    )
-}
-//portfoliio
-const imgPortafolio = () =>  <h1 className='txt-logo-modal'>MyPortfolio</h1>
-const txtPortafolio = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Desarrollado com react, mi portafolio profesional<br />...</motion.p>
-const BtnPortafolio = () => {
-    const [isOpenModalPortafolio, openModalPortafolio, closeModalPotafolio] = useModal(false)
-    return(
-        <>
-        <BtnOpenModal myOnClick={openModalPortafolio}/>
-        <Modal isOpen={isOpenModalPortafolio} closeModal={closeModalPotafolio}>
-            <ModalPort />
-        </Modal>
-        </>
-    )
-}
-//calistenia 
-const imgCalistenia = () => <h1 className='txt-logo-modal'>CalisteniaMx</h1>
-const txtCalistenia = () => <motion.p  whileHover={{ scale: 1.1 }} className='txt-modal'>Proyecto personal desarrollado con JS Vanilla<br />...</motion.p>
-const BtnCalistenia = () => {
-    const [isOpenModalCalistenia, openModalCalistenia, closeModalCalistenia] = useModal(false)
-    return(
-        <>
-        <BtnOpenModal myOnClick={openModalCalistenia} />
-        <Modal isOpen={isOpenModalCalistenia} closeModal={closeModalCalistenia}>
-            <ModalCalis />
-        </Modal>
-        </>
-    )
-}
-
-const Modals = () => {
-  return (
-    <>  
-    <div className='file-modals-wrapper'>
-        <ModalDesign 
-        imgmodal={img()}
-        txtmodal={txt()}
-        btn={BtnModal()}
-        />
-        <ModalDesign 
-        imgmodal={imgPortafolio()}
-        txtmodal={txtPortafolio()}
-        btn={BtnPortafolio()}
-        />
-        <ModalDesign 
-        imgmodal={imgCalistenia()}
-        txtmodal={txtCalistenia()}
-        btn={BtnCalistenia()}
-        />
-    </div>
-    <div className='file-modals-wrapper'>
-    </div>
-    </>
-  )
-}
 
 export default Modals
