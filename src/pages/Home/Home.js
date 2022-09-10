@@ -5,8 +5,6 @@ import { TableOne, TableTwo } from '../../components/Tecno/Tables'
 import {BtnContacto, BtnCv} from '../../components/Buttons/BtnsPerfil'
 import './Home.scss'
 
-
-
 const Home = () => {
   return (
   <motion.div 

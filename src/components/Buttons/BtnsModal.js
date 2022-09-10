@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion'
 import './Buttons.scss'
 
-export const BtnCode = (props) => {
+export const BtnCode = ({ link }) => {
   return(
     <motion.a 
-    href={props.link} 
+    href={link} 
     target='_blank' 
     rel='noreferrer' 
     whileHover={{ scale: 1.1 }}
@@ -15,10 +15,10 @@ export const BtnCode = (props) => {
   )
 }
 
-export const BtnView = (props) => {
+export const BtnView = ({ link }) => {
   return(
     <motion.a 
-    href={props.link} 
+    href={link} 
     target='_blank' 
     rel='noreferrer' 
     whileHover={{ scale: 1.1 }}

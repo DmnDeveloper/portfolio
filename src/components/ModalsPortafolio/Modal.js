@@ -2,7 +2,22 @@ import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import './Modal.scss'
 
-
+export const Children = (props) =>{
+  return(
+    <>
+    <p className='txt-one'>{props.txtone}</p>
+    <div className='img-one'><img src={props.imgone} alt=''/></div>
+    <p className='txt-two'>{props.txttwo}</p>
+    <div className='img-two'><img  src={props.imgtwo} alt=''/></div>
+    <p className='txt-two'>{props.txtthree}</p>
+    <div className='img-two'><img  src={props.imgthree} alt=''/></div>
+    <div className='container-btns'>
+      {props.btncode}
+      {props.btnview}
+    </div>
+    </>
+  )
+}
 
 export const Modal = ({ children, isOpen, closeModal }) => {
   const handleModelContainerClick = e => e.stopPropagation()

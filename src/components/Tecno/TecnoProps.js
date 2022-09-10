@@ -16,17 +16,18 @@ export const IconDesign = (props) => {
     <div className='logo-porcent'>
         <motion.div 
         className='wrapper-rotate'
-        animate={{ rotateY: 3960 , scale: [0, 1.2, 1]}}
-        transition={{  duration: 2 }}
+        animate={{ rotate: 3960 , scale: [0, 1.2, 1]}}
+        transition={{  duration: 3 }}
         >{props.icon}</motion.div>
         <div className='inf-level'>{props.level}</div>
     </div>
      <motion.div 
      className='txt-level'
      animate={{ scale: [0, 0, 1] }}
-     transition={{ duration: 2 }}
-     >
-      {props.txt}</motion.div>
+     transition={{ duration: 3 }}
+     ><p className='text'>
+      {props.txt}
+     </p></motion.div>
   </div>
   )
 }

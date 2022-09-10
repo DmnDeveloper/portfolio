@@ -22,7 +22,11 @@ export function BtnCv() {
       target='_blank' 
       rel='noreferrer' 
       download='CVDamian.pdf'>
-          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='btn-cv'>DescargarCV</motion.button>
+          <motion.button 
+          className='btn-cv'
+          whileHover={{ scale: 1.1 }} 
+          whileTap={{ scale: 0.8 }} 
+          >DescargarCV</motion.button>
       </a>
   )
 }

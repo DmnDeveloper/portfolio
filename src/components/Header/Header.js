@@ -1,7 +1,6 @@
 import React from 'react'
 import BtnIconFooter from '../Buttons/BtnIconFooter'
-import { AiOutlineLeft } from "react-icons/ai";
-import { AiOutlineRight } from "react-icons/ai";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { VscGithub } from 'react-icons/vsc'
 import { GrLinkedinOption } from 'react-icons/gr'
 import MenuNav from './MenuNav'
