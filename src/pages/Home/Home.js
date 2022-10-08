@@ -5,13 +5,14 @@ import { TableOne, TableTwo } from '../../components/Tecno/Tables'
 import {BtnContacto, BtnCv} from '../../components/Buttons/BtnsPerfil'
 import './Home.scss'
 
+
 const Home = () => {
   return (
   <motion.div 
   className='home-wrapper'
   initial={{width: 0}}
   animate={{width: '100%'}}
-  exit={{x: window.innerWidth, transition: { duration: 0.1 } }}
+  exit={{x: window.innerWidth, transition: { duration: 0.3 } }}
   >
       <MyPerfil
         name={'Front-end'}
